@@ -2,9 +2,17 @@ package utils.utility;
 
 public class Pair<K, V> {
 
-    private K key;
+    public K key;
 
-    private V value;
+    public V value;
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
 
     public Pair() {
     }
