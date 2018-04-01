@@ -2,19 +2,16 @@ package utils.utility;
 
 public class Pair<K, V> {
 
-    public K key;
-
-    public V value;
+    private K key;
 
     public K getKey() {
         return key;
     }
 
+    private V value;
+
     public V getValue() {
         return value;
-    }
-
-    public Pair() {
     }
 
     public Pair(K key, V value) {
@@ -22,13 +19,13 @@ public class Pair<K, V> {
         this.value = value;
     }
 
-    public Pair of(K key, V value) {
+    public static <K, V> Pair of(K key, V value) {
         return new Pair(key, value);
     }
 
     @Override
     public String toString() {
-        return key + "=" + value;
+        return key + " = " + value;
     }
 
     @Override
