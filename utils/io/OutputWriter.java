@@ -24,7 +24,7 @@ public class OutputWriter {
     }
 
     public void printLine(Object... objects) {
-        writer.print(objects);
+        this.print(objects);
         writer.println();
     }
 
