@@ -32,8 +32,4 @@ public class OutputWriter {
         writer.flush();
         writer.close();
     }
-
-    public void flush() {
-        writer.flush();
-    }
 }
