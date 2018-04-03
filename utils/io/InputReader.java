@@ -35,7 +35,7 @@ public class InputReader {
         return buf[curChar++];
     }
 
-    public int readInt() {
+    public int readInteger() {
         int c = read();
         while (isSpaceChar(c)) {
             c = read();
@@ -103,7 +103,7 @@ public class InputReader {
         double res = 0;
         while (!isSpaceChar(c) && c != '.') {
             if (c == 'e' || c == 'E') {
-                return res * Math.pow(10, readInt());
+                return res * Math.pow(10, readInteger());
             }
             if (c < '0' || c > '9') {
                 throw new InputMismatchException();
@@ -117,7 +117,7 @@ public class InputReader {
             double m = 1;
             while (!isSpaceChar(c)) {
                 if (c == 'e' || c == 'E') {
-                    return res * Math.pow(10, readInt());
+                    return res * Math.pow(10, readInteger());
                 }
                 if (c < '0' || c > '9') {
                     throw new InputMismatchException();
