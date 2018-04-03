@@ -57,6 +57,13 @@ public class InputReader {
         return res * sgn;
     }
 
+    public char readCharacter() {
+        int c;
+        for (c = this.read(); isSpaceChar(c); c = this.read()) {
+        }
+        return (char) c;
+    }
+
     public String readString() {
         int c = read();
         while (isSpaceChar(c)) {
@@ -157,10 +164,6 @@ public class InputReader {
             return filter.isSpaceChar(c);
         }
         return c == '\n' || c == -1;
-    }
-
-    public String next() {
-        return readString();
     }
 
     public interface SpaceCharFilter {
