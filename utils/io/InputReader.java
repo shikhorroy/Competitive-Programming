@@ -152,6 +152,10 @@ public class InputReader {
         return res * sgn;
     }
 
+    public String next() {
+        return readString();
+    }
+
     public boolean isSpaceChar(int c) {
         if (filter != null) {
             return filter.isSpaceChar(c);
