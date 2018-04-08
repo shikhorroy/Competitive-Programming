@@ -9,6 +9,10 @@ public class Searching {
         LOWER, UPPER
     }
 
+    public static int binarySearch(int[] a, int key) {
+        return Arrays.binarySearch(a, key);
+    }
+
     public static int binarySearch(long[] a, long key) {
         return Arrays.binarySearch(a, key);
     }
