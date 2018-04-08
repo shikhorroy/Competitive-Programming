@@ -1,6 +1,7 @@
 package utils.algo.searching;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Searching {
@@ -15,6 +16,11 @@ public class Searching {
 
     public static int binarySearch(long[] a, long key) {
         return Arrays.binarySearch(a, key);
+    }
+
+    public static <T>
+    int binarySearch(List<? extends Comparable<? super T>> list, T key) {
+        return Collections.binarySearch(list, key);
     }
 
     public static <T> int boundarySearch(List<T> array, T key, Boundary bound) {
