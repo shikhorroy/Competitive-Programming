@@ -31,7 +31,8 @@ public class Searching {
             Comparable<? super T> midVal = (Comparable) array.get(mid);
             int cmp = midVal.compareTo(key);
 
-            if ((bound.equals(Boundary.LOWER) && cmp < 0) || (bound.equals(Boundary.UPPER) && cmp <= 0)) {
+            if ((bound.equals(Boundary.LOWER) && cmp < 0)
+                    || (bound.equals(Boundary.UPPER) && cmp <= 0)) {
                 low = mid + 1;
             } else {
                 high = mid;
