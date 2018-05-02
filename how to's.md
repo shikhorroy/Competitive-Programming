@@ -1,9 +1,11 @@
-<h3>How to's...</h3>
+<h2>How to's...</h2>
 
 **<u>CFR - 478</u>**
 
-01. sort string alphabetically.
-    
+1.sort string alphabetically.
+
+**<u>Answer</u>:**
+
    - Sort characters in a string in java. e.g. `String s = "edcba"  ->  "abcde"`
         
             String original = "edcba";
@@ -12,12 +14,12 @@
             String sorted = new String(chars);
             System.out.println(sorted);
     
-02. Copy an array into another array or into a collection.
+2.Copy an array into another array or into a collection.
 
 **<u>Answer</u>:**
-    
+
    - Using `System.arraycopy()` (shallow copy)    
-               
+
             int[] src  = new int[]{1,2,3,4,5};
             int[] dest = new int[5];
             System.arraycopy( src, 0, dest, 0, src.length );
