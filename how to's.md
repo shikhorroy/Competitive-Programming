@@ -37,3 +37,15 @@
        
             int[] a = new int[]{1,2,3,4,5};
             int[] b = a.clone();
+
+3.A declared array contains default values as instance variable.
+
+   - Example
+           
+            int[] a = new int[5];
+            
+            for (int i = 0; i < 10; i++) {
+                System.out.print(a[i] + " ");
+            }
+            output:
+                0 0 0 0 0 
