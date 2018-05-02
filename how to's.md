@@ -4,7 +4,7 @@
 
 01. sort string alphabetically.
     
-    Sort characters in a string in java. e.g. `String s = "edcba"  ->  "abcde"`
+   - Sort characters in a string in java. e.g. `String s = "edcba"  ->  "abcde"`
         
             String original = "edcba";
             char[] chars = original.toCharArray();
