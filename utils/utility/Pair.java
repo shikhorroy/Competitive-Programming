@@ -1,6 +1,6 @@
 package utils.utility;
 
-public class Pair<K, V> {
+public class Pair<K, V> implements Comparable<Pair> {
 
     public K key;
 
@@ -17,7 +17,7 @@ public class Pair<K, V> {
 
     @Override
     public String toString() {
-        return key + " = " + value;
+        return "(" + key + ", " + value + ")";
     }
 
     @Override
@@ -38,5 +38,13 @@ public class Pair<K, V> {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public int compareTo(Pair o) {
+        return (this.key.hashCode() < o.key.hashCode()) ? -1 :
+                (this.key.hashCode() > o.key.hashCode()) ? 1 :
+                        (this.value.hashCode() < o.value.hashCode()) ? -1 :
+                                (this.value.hashCode() > o.value.hashCode()) ? 1 : 0;
     }
 }
