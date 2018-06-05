@@ -77,7 +77,7 @@ public class Trie {
         StringBuilder result = new StringBuilder();
 
         int prevMatch = 0;
-        for (int i = 0, ln = string.length(); i < ln; i++) {
+        for (int i = 0, ln = string.length(); i < ln; ++i) {
             child = node.getChildren();
             char ch = string.charAt(i);
 
