@@ -1,0 +1,25 @@
+20 Number_letter_counts
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+0 
+0 
+1
+4 main
+7 -Xmx64M
+4 Main
+25 main.Number_letter_counts
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.06.05
+31 Problem 17 Number letter counts
+1
+20 utils.io.InputReader
+21 utils.io.OutputWriter
+0
+0
