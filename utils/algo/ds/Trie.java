@@ -71,7 +71,7 @@ public class Trie {
         return node.isEnd();
     }
 
-    public String getMatchedPrefix(String string) {
+    public String getMatchedPrefixWord(String string) {
         TrieNode node = root;
         HashMap<Character, TrieNode> child;
         StringBuilder result = new StringBuilder();
