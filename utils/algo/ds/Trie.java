@@ -70,4 +70,29 @@ public class Trie {
         }
         return node.isEnd();
     }
+
+    public String getMatchedPrefix(String string) {
+        TrieNode node = root;
+        HashMap<Character, TrieNode> child;
+        StringBuilder result = new StringBuilder();
+
+        int prevMatch = 0;
+        for (int i = 0, ln = string.length(); i < ln; i++) {
+            child = node.getChildren();
+            char ch = string.charAt(i);
+
+            if (child.containsKey(ch)) {
+                result.append(ch);
+                node = child.get(ch);
+
+                if (node.isEnd())
+                    prevMatch = i + 1;
+            } else break;
+        }
+
+        if (!node.isEnd())
+            return result.substring(0, prevMatch);
+
+        return result.toString();
+    }
 }
