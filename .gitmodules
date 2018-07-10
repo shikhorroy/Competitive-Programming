@@ -1,3 +1,6 @@
 [submodule "archive/UVa"]
 	path = archive/UVa
 	url = https://github.com/shikhorroy/UVa-OJ-Problem-Solutions.git
+[submodule "archive/FbHackCup"]
+	path = archive/FbHackCup
+	url = https://github.com/shikhorroy/Facebook-HackerCup.git
