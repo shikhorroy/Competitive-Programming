@@ -1,0 +1,3 @@
+[submodule "archive/UVa"]
+	path = archive/UVa
+	url = https://github.com/shikhorroy/UVa-OJ-Problem-Solutions.git
